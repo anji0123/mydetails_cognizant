@@ -1,0 +1,10 @@
+over ( ORder by) can be used with window fun like rank dense and row 
+to use order by with string_agg we need to use group by or with in group(order by)
+ 
+over(partition by work in window func
+with in group (partition by does not work again but it works with window fun(over(partition by) and agg_fun(over(partition by)
+ 
+
+window func(over(order by and parition by ) can be possible but agg_fun() with in group( order by) and with in group () Over( partion  by) can be possible And agg_fun() with in group(partion by ) is invalid and agg_fun()  over (partition by ) is possible
+
+so string_agg fun() with in group ( order by) is possible string_agg fun() with in group( partition  by ) IS NOT possible string_agg fun() over( partition by ) is possible string_agg fun() over( order by ) is not possible
